@@ -1,0 +1,19 @@
+.field {
+  text-transform: uppercase;
+
+  .field__input {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .field__input--telephone,
+  .field__input--email {
+    color: #000000;
+  }
+
+  .field__input--telephone::placeholder,
+  .field__input--email::placeholder {
+    color: lighten(#000000, 30%);
+  }
+}
