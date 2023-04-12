@@ -12,3 +12,26 @@
 .presentation__image {
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    margin-bottom: 40px;
+  }
+
+  .presentation__image {
+    width: 648px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    margin-bottom: 84px;
+  }
+
+  .presentation__image {
+    width: 800px;
+    height: 500px;
+  }
+}
