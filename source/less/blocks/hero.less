@@ -5,3 +5,16 @@
   background-size: 320px 214px;
   background-repeat: no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .hero {
+    background-size: @tablet-width 298px;
+  }
+
+  .hero__image {
+    width: 457px;
+    height: 78px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}

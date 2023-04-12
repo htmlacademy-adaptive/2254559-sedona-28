@@ -5,3 +5,19 @@
 .catalog-list__item {
   margin-bottom: 25px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    grid-template-rows: (480px, 347px, 347px);
+  }
+
+  .catalog-list__item {
+    grid-column: ~"1 / 2";
+  }
+
+  .catalog-list__item--wide {
+    grid-column: ~"1 / 3";
+  }
+}
