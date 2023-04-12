@@ -11,12 +11,27 @@
   .index-hero {
     width: @tablet-width;
     height: 518px;
-    padding: 77px 153.5px 91px;
+    padding: 77px 0 91px;
     background-size: @tablet-width 518px;
   }
 
   .index-hero__image {
     width: 461px;
     height: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-hero {
+    width: @desktop-width;
+    padding: 77px 0 91px;
+    background-size: @desktop-width 518px;
+  }
+
+  .index-hero__image {
+    width: 461px;
+    height: 350px;
+    object-fit: cover;
   }
 }

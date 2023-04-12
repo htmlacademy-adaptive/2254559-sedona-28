@@ -15,3 +15,33 @@
   display: block;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages-item__service-list {
+    display: flex;
+  }
+
+  .advantages-item__text-wrapper {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .advantages-item__photo {
+    width: 512px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-item__service-list {
+    display: flex;
+  }
+
+  .advantages-item__text-wrapper {
+    width: 400px;
+  }
+
+  .advantages-item__photo {
+    width: 800px;
+  }
+}

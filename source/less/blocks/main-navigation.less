@@ -1,6 +1,20 @@
 @media (min-width: @tablet-width) {
   .main-navigation {
-    width: 768px;
+    width: @tablet-width;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation {
+    width: @desktop-width;
   }
 
   .main-navigation__toggle {

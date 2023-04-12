@@ -1,7 +1,28 @@
 @media (min-width: @tablet-width) {
   .main-header {
     position: relative;
-    width: 768px;
+    width: @tablet-width;
     display: flex;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    top: 0;
+    left: 291px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    position: relative;
+    width: @desktop-width;
+    display: flex;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    width: 240px;
   }
 }

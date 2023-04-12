@@ -1,7 +1,24 @@
 .service-list {
   .clear-list();
 
-  padding: 23px 18px 46px;
   background-color: #ffffff;
   color: #333333;
+}
+
+.service-list__item {
+  padding: 25px 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .service-list__item {
+    width: 256px;
+    padding: 60px 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service-list__item {
+    width: 400px;
+    padding: 69px 50px;
+  }
 }
