@@ -2,15 +2,40 @@
   .clear-list();
 }
 
+.navigation-list__item {
+  height: 55px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
 .navigation-list__link {
+  display: block;
+  padding: 18px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
+}
 
-  &--current {
-    color: #766357;
+@media (min-width: @tablet-width) {
+  .navigation-list__item {
+    width: 153.6px;
+    height: 56px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  .navigation-list__item:nth-child(2) {
+    margin-right: 153.6px;
+  }
+
+  .navigation-list__link {
+    color: #000000;
+
+    &--current {
+      color: #766357;
+    }
   }
 }
