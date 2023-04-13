@@ -15,7 +15,19 @@ img {
   box-sizing: border-box;
 }
 
-.content-wrapper {
-  /*max-width: fit-content;*/
+.page-wrapper {
+  width: @mobile-width;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-wrapper {
+    width: @desktop-width;
+  }
 }

@@ -1,7 +1,27 @@
-.feedback {
-  padding: 0 20px 22px;
+.feedback__wrapper {
+  padding: 0 20px;
 }
 
 .feedback__description {
   margin-bottom: 53px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__description {
+    margin-bottom: 112px;
+  }
+
+  .feedback__wrapper {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__description {
+    margin-bottom: 68px;
+  }
+
+  .feedback__wrapper {
+    padding: 0 120px;
+  }
 }
