@@ -1,14 +1,12 @@
 .social-list {
   .clear-list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    gap: 6px;
+  }
 }
 
 .social-list__link {
   display: block;
-}
-
-@media (min-width: @tablet-width) {
-  .social-list {
-    display: flex;
-    gap: 6px;
-  }
 }

@@ -5,33 +5,19 @@
   background-size: @mobile-width;
   background-repeat: no-repeat;
   background-color: #c6c926;
-}
 
-@media (min-width: @tablet-width) {
-  .index-hero {
+  @media (min-width: @tablet-width) {
     width: 100%;
     padding: 77px 0 91px;
     background-size: 100% 518px;
   }
+}
 
-  .index-hero__image {
+.index-hero__image {
+  @media (min-width: @tablet-width) {
     width: 461px;
     height: 350px;
     margin: 0 auto;
-    object-fit: cover;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .index-hero {
-    width: 100%;
-    padding: 77px 0 91px;
-    background-size: 100% 518px;
-  }
-
-  .index-hero__image {
-    width: 461px;
-    height: 350px;
     object-fit: cover;
   }
 }

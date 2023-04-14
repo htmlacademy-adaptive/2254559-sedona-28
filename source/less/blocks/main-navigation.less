@@ -1,19 +1,21 @@
-@media (min-width: @tablet-width) {
-  .main-navigation {
+.main-navigation {
+  @media (min-width: @tablet-width) {
     width: @tablet-width;
   }
 
-  .main-navigation__toggle {
-    display: none;
-  }
-
-  .main-navigation__list {
-    display: flex;
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-navigation {
-    width: @desktop-width;
+.main-navigation__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-navigation__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }

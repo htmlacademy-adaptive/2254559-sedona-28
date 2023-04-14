@@ -2,7 +2,15 @@
   margin-bottom: 8px;
 }
 
-@media (min-width: @tablet-width) {
+.map__image {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    min-height: 350px;
+    object-fit: cover;
+  }
+}
+
+/*@media (min-width: @tablet-width) {
   .map__image {
     width: 100%;
     min-height: 350px;
@@ -10,7 +18,7 @@
   }
 }
 
-/*@media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .map__image {
     width: @desktop-width;
   }

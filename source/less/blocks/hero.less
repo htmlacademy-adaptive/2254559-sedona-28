@@ -4,23 +4,21 @@
   background-image: url("../img/hero-background.jpg");
   background-size: @mobile-width 214px;
   background-repeat: no-repeat;
-}
 
-@media (min-width: @tablet-width) {
-  .hero {
+  @media (min-width: @tablet-width) {
     background-size: @tablet-width 298px;
   }
 
-  .hero__image {
+  @media (min-width: @desktop-width) {
+    background-size: @desktop-width 298px;
+  }
+}
+
+.hero__image {
+  @media (min-width: @tablet-width) {
     width: 457px;
     height: 78px;
     margin: 0 auto;
     object-fit: cover;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .hero {
-    background-size: @desktop-width 298px;
   }
 }
