@@ -1,27 +1,23 @@
-@media (min-width: @tablet-width) {
-  .main-header {
+.main-header {
+  @media (min-width: @tablet-width) {
     position: relative;
     width: @tablet-width;
     display: flex;
   }
 
-  .main-header__logo {
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
     left: 291px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-header {
-    position: relative;
-    width: @desktop-width;
-    display: flex;
-  }
-
-  .main-header__logo {
-    position: absolute;
-    top: 0;
+  @media (min-width: @desktop-width) {
     left: 480px;
     width: 240px;
   }
