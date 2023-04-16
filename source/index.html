@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page-wrapper">
   <header class="main-header">
     <a class="main-header__logo logo">
       <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
@@ -53,6 +55,7 @@
             <p class="advantages-item__description description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="advantages-item__photo" src="img/advantages-city.jpg" width="320" height="260" alt="фотография города.">
+          <div class="advantages-item__wrapper">
           <ul class="advantages-item__service-list service-list">
             <li class="service-list__item service-item--house service-item">
               <h4 class="service-item__title title">Жилье</h4>
@@ -69,8 +72,9 @@
               <p class="service-item__description description">Не только китайского, но и местного производства!
               </p>
           </ul>
+        </div>
         </li>
-        <li class="advantages-list__item advantages-item--illustration advantages-item--background advantages-item">
+        <li class="advantages-list__item advantages-item--illustration-reverse advantages-item--background advantages-item">
           <div class="advantages-item__text-wrapper">
             <h4 class="advantages-item__title title title--white">Там есть мост дьявола</h4>
             <span class="advantages-item__number">- №2 -</span>
@@ -159,6 +163,7 @@
       </svg>
     </a>
   </footer>
+</div>
 </body>
 
 </html>

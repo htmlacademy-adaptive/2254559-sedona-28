@@ -2,7 +2,22 @@
   padding: 90px 19px 85px;
   margin-bottom: 32px;
   background-image: url("../img/hero-background.jpg");
-  background-size: 320px 389px;
+  background-size: @mobile-width;
   background-repeat: no-repeat;
   background-color: #c6c926;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 77px 0 91px;
+    background-size: 100% 518px;
+  }
+}
+
+.index-hero__image {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
 }

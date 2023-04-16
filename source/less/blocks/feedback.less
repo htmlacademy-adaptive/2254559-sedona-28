@@ -1,7 +1,23 @@
-.feedback {
-  padding: 0 20px 22px;
+.feedback__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .feedback__description {
   margin-bottom: 53px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 112px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+  }
 }

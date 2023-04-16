@@ -1,5 +1,10 @@
 .main-footer {
   padding: 33px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__hashtag {
@@ -8,4 +13,10 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.main-footer__developer-link {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }

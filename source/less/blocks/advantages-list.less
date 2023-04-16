@@ -1,3 +1,23 @@
 .advantages-list {
   .clear-list();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
+.advantages-list__item {
+  @media (min-width: @tablet-width) {
+    padding: 41px 33px 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px;
+  }
 }
