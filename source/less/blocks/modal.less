@@ -3,19 +3,17 @@
 
   &--error {
     min-height: 280px;
+
+    @media (min-width: @tablet-width) {
+      width: 400px;
+      min-height: 347px;
+    }
   }
 
   &--accept {
     min-height: 323px;
-  }
 
-  @media (min-width: @tablet-width) {
-    &--error {
-      width: 400px;
-      min-height: 347px;
-    }
-
-    &--accept {
+    @media (min-width: @tablet-width) {
       width: 640px;
       min-height: 347px;
     }
@@ -53,18 +51,16 @@
 
   &--error {
     width: 180px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
   }
 
   &--accept {
     width: 280px;
-  }
 
-  @media (min-width: @tablet-width) {
-    &--error {
-      width: 272px;
-    }
-
-    &--accept {
+    @media (min-width: @tablet-width) {
       width: 458px;
     }
   }

@@ -12,21 +12,28 @@
       padding: 0;
       grid-column: 1 / 4;
       grid-template-columns: repeat(3, 256px);
-
-      &:nth-child(2) {
-        .advantages-item__photo {
-          grid-column: 1 / 3;
-          grid-row: 1 / 2;
-        }
-
-        .advantages-item__text-wrapper {
-          grid-column: 3 / 4;
-        }
-      }
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: repeat(3, 400px);
+    }
+  }
+
+  &--illustration-reverse {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      padding: 0;
+      grid-column: 1 / 4;
+      grid-template-columns: repeat(3, 256px);
+
+      .advantages-item__photo {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .advantages-item__text-wrapper {
+        grid-column: 3 / 4;
+      }
     }
   }
 }
