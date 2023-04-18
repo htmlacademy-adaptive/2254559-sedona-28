@@ -6,7 +6,11 @@
 }
 
 .service-list__item {
-  padding: 25px 18px;
+  padding-left: 47px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 256px;

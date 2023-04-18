@@ -1,10 +1,36 @@
 .index-hero {
+  position: relative;
   padding: 90px 19px 85px;
   margin-bottom: 32px;
   background-image: url("../img/hero-background.jpg");
   background-size: @mobile-width;
   background-repeat: no-repeat;
   background-color: #c6c926;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -440px;
+    width: 600px;
+    height: 57px;
+    background-image: url("../img/decoration.svg");
+    background-repeat: no-repeat;
+    background-size: 600px 57px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -440px;
+    width: 600px;
+    height: 57px;
+    background-image: url("../img/decoration.svg");
+    background-repeat: no-repeat;
+    background-size: 600px 57px;
+    transform: scaleX(-1);
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;

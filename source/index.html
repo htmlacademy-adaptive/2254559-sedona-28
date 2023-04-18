@@ -10,13 +10,16 @@
 
 <body class="page__body">
   <div class="page-wrapper">
-  <header class="main-header">
+  <header class="main-header main-header--closed">
     <a class="main-header__logo logo">
       <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle button-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+    <button class="main-header__toggle button-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-navigation main-navigation--opened">
+      <button class="main-navigation__close button-close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-navigation__list navigation-list">
         <li class="navigation-list__item">
@@ -84,19 +87,25 @@
             alt="фотография города.">
         </li>
         <li class="advantages-list__item advantages-item">
-          <h4 class="advantages-item__title title">Небольшая площадь</h4>
-          <span class="advantages-item__number">- №3 -</span>
-          <p class="advantages-item__description description">Все интересные места находятся очень близко</p>
+          <div class="advantages-item__text-wrapper-small">
+            <h4 class="advantages-item__title title">Небольшая площадь</h4>
+            <span class="advantages-item__number">- №3 -</span>
+            <p class="advantages-item__description description">Все интересные места находятся очень близко</p>
+        </div>
         </li>
         <li class="advantages-list__item advantages-item">
-          <h4 class="advantages-item__title title">Красивая дорога</h4>
-          <span class="advantages-item__number">- №4 -</span>
-          <p class="advantages-item__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <div class="advantages-item__text-wrapper-small">
+            <h4 class="advantages-item__title title">Красивая дорога</h4>
+            <span class="advantages-item__number">- №4 -</span>
+            <p class="advantages-item__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
         <li class="advantages-list__item advantages-item">
-          <h4 class="advantages-item__title title">Мало туристов</h4>
-          <span class="advantages-item__number">- №5 -</span>
-          <p class="advantages-item__description description">Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="advantages-item__text-wrapper-small">
+            <h4 class="advantages-item__title title">Мало туристов</h4>
+            <span class="advantages-item__number">- №5 -</span>
+            <p class="advantages-item__description description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
       </ol>
     </section>
