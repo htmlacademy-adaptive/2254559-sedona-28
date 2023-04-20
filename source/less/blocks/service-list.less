@@ -8,13 +8,15 @@
 .service-list__item {
   padding-left: 47px;
 
-  &:not(:last-child) {
-    margin-bottom: 25px;
+  @media (max-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 60px 33px;
+    padding: 158px 33px 60px;
   }
 
   @media (min-width: @desktop-width) {

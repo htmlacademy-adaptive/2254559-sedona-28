@@ -4,9 +4,9 @@
   @media (max-width: @tablet-width) {
     width: @mobile-width;
 
-    &--closed {
+    /*&--closed {
       display: none;
-    }
+    }*/
 
     &--opened {
       position: absolute;
@@ -28,6 +28,7 @@
 
 .main-navigation__toggle {
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   display: block;

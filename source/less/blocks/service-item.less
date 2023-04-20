@@ -1,26 +1,54 @@
 .service-item__title {
-  text-align: left;
-  margin-bottom: 16px;
+  @media (max-width: @tablet-width) {
+    text-align: left;
+    margin-bottom: 16px;
+  }
 }
 
 .service-item__description {
-  text-align: left;
+  @media (max-width: @tablet-width) {
+    text-align: left;
+  }
 }
 
 .service-item--house {
   background-image: url("../img/service-house.png");
-  background-size: 40px 40px;
   background-repeat: no-repeat;
+
+  @media (max-width: @tablet-width) {
+    background-size: 40px 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: 77px 72px;
+    background-position: left 89px top 60px;
+  }
 }
 
 .service-item--food {
   background-image: url("../img/service-food.png");
-  background-size: 40px 40px;
   background-repeat: no-repeat;
+
+  @media (max-width: @tablet-width) {
+    background-size: 40px 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: 77px 72px;
+    background-position: left 89px top 60px;
+  }
 }
 
 .service-item--souvenirs {
   background-image: url("../img/service-souvenirs.png");
-  background-size: 40px 40px;
   background-repeat: no-repeat;
+
+  @media (max-width: @tablet-width) {
+    background-size: 40px 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: 77px 72px;
+    background-position: left 89px top 60px;
+  }
 }

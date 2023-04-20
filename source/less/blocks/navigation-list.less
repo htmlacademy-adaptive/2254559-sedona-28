@@ -3,9 +3,34 @@
 }
 
 .navigation-list__item {
+  position: relative;
   height: 55px;
   text-align: center;
   background-color: #81b3d2;
+
+  @media (max-width: @tablet-width) {
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: 1px;
+      width: @mobile-width;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      height: 1px;
+      width: @mobile-width;
+      box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 154px;

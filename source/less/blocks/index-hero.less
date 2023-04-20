@@ -11,25 +11,47 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: -440px;
     width: 600px;
     height: 57px;
     background-image: url("../img/decoration.svg");
     background-repeat: no-repeat;
     background-size: 600px 57px;
+
+    @media (max-width: @tablet-width) {
+      right: calc(@mobile-width / 2);
+    }
+
+    @media (min-width: @tablet-width) {
+      right: calc(@tablet-width / 2);
+    }
+
+    @media (min-width: @desktop-width) {
+      right: calc(@desktop-width / 2);
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
-    right: -440px;
     width: 600px;
     height: 57px;
     background-image: url("../img/decoration.svg");
     background-repeat: no-repeat;
     background-size: 600px 57px;
     transform: scaleX(-1);
+
+    @media (max-width: @tablet-width) {
+      left: calc(@mobile-width / 2);
+    }
+
+    @media (min-width: @tablet-width) {
+      left: calc(@tablet-width / 2);
+    }
+
+    @media (min-width: @desktop-width) {
+      left: calc(@desktop-width / 2);
+    }
   }
 
   @media (min-width: @tablet-width) {
