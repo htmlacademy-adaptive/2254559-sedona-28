@@ -1,6 +1,22 @@
 .main-navigation {
   position: relative;
 
+  @media (max-width: @tablet-width) {
+    width: @mobile-width;
+
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: @mobile-width;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: @tablet-width;
   }

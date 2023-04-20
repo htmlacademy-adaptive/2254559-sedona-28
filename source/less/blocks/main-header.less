@@ -1,15 +1,21 @@
 .main-header {
   position: relative;
+  min-height: 56px;
 
   @media (min-width: @tablet-width) {
     position: relative;
     width: 100%;
     display: flex;
+
+    .main-header__toggle {
+      display: none;
+    }
   }
 }
 
 .main-header__toggle {
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   display: block;
@@ -42,6 +48,9 @@
 }
 
 .main-header__logo {
+  position: absolute;
+  left: 67px;
+  z-index: 1;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
