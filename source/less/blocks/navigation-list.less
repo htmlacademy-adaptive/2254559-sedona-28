@@ -62,6 +62,27 @@
   text-decoration: none;
   color: #ffffff;
 
+  &:hover {
+    @media (max-width: @tablet-width) {
+      background-color: #669ec0;
+    }
+
+    @media (min-width: @tablet-width) {
+      color: #81b3d2;
+    }
+  }
+
+  &:active {
+    @media (max-width: @tablet-width) {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: @tablet-width) {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   @media (min-width: @tablet-width) {
     color: #000000;
   }
