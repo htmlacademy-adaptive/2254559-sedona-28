@@ -36,6 +36,10 @@
         grid-column: 3 / 4;
       }
     }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: repeat(3, 400px);
+    }
   }
 
   &--decorate::after {
@@ -70,7 +74,10 @@
 
 .advantages-item__text-wrapper-small {
   position: relative;
-  padding: 24px 26px;
+
+  @media (max-width: @tablet-width) {
+    padding: 24px 26px;
+  }
 }
 
 .advantages-item__title {
@@ -79,8 +86,15 @@
 
 .advantages-item__number {
   display: block;
-  margin-bottom: 17px;
   text-align: center;
+
+  @media (max-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages-item__service-list {

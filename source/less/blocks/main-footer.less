@@ -3,7 +3,13 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    padding: 36px 60px;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 120px;
   }
 }
 
@@ -15,6 +21,10 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social-list {
@@ -22,6 +32,10 @@
   margin-bottom: 30px;
   justify-content: center;
   gap: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__developer-link {
