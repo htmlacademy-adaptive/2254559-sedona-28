@@ -2,14 +2,16 @@
   .clear-list();
 
   @media (min-width: @tablet-width) {
+    padding: 0 60px;
     display: grid;
     grid-template-columns: repeat(2, 324px);
     grid-template-rows: 480px 347px 347px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0;
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: 480px 327px;
+    grid-template-rows: 400px 267px;
   }
 }
 
@@ -17,28 +19,31 @@
   position: relative;
   padding: 25px 20px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: @mobile-width;
-    height: 1px;
-    background-color: #e5e5e5;
-  }
+  @media (max-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: @mobile-width;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
 
-  &:last-child::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: @mobile-width;
-    height: 1px;
-    background-color: #e5e5e5;
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: @mobile-width;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
   }
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding: 0;
     background-color: #f2f2f2;
 
     &--wide {

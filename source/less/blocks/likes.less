@@ -1,30 +1,44 @@
 .likes {
   position: relative;
-  width: 69px;
-  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9px;
+  min-width: 40px;
+  min-height: 25px;
   padding: 0;
   background-color: transparent;
   border: none;
 
-  @media (min-width: @tablet-width) {
-    width: 64px;
+  &:hover {
+    cursor: pointer;
+
+    .likes__icon {
+      fill: #81b3d2;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 56px;
+  &:active {
+    cursor: pointer;
+
+    .likes__icon {
+      fill: #f81818;
+    }
   }
 }
 
 .likes__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
   fill: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+  }
 }
 
 .likes__number {
-  position: absolute;
-  left: 38;
-  top: 5px;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
