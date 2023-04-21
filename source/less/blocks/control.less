@@ -1,6 +1,55 @@
 .control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+
+  .control__mark {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    display: block;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    background-size: 46px 46px;
+    background-position: left top;
+  }
+
+  &--checkbox {
+    .control__mark {
+      position: relative;
+      width: 46px;
+      height: 46px;
+      display: block;
+      border-radius: 4px;
+      background-color: #f2f2f2;
+      background-size: 46px 46px;
+      background-position: left top;
+    }
+  }
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/checkbox-mark.png");
 }

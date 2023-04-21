@@ -1,5 +1,6 @@
 .modal {
   width: @mobile-width;
+  margin: 0 auto;
 
   &--error {
     min-height: 280px;
@@ -20,10 +21,10 @@
   }
 }
 
-.modal__content {
-  min-width: 237px;
+.modal__content--error {
+  width: 237px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  padding: 45px 0 28px;
 
   @media (min-width: @tablet-width) {
     min-width: 307px;
@@ -31,10 +32,25 @@
   }
 }
 
+.modal__content--accept {
+  width: 244px;
+  margin: 0 auto;
+  padding: 39px 0 51px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 307px;
+    margin-bottom: 25px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 25px;
+}
+
 .modal__accept-wrapper {
   width: @mobile-width;
   height: 98px;
-  padding-top: 20px;
+  padding: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
@@ -51,6 +67,7 @@
 
   &--error {
     width: 180px;
+    margin-bottom: 35px;
 
     @media (min-width: @tablet-width) {
       width: 272px;

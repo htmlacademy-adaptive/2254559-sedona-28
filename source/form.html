@@ -74,29 +74,43 @@
             </fieldset>
             <fieldset class="form-feedback__impression">
               <legend class="form-feedback__title title">Ваше общее впечатление:</legend>
-              <label class="form-feedback__radio control">Скорее положительное
-                <input class="control__input" type="radio" name="impression" value="Позитивное" checked>
+              <label class="form-feedback__radio control">
+                <input class="visually-hidden control__input" type="radio" name="impression" value="Позитивное" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее положительное</span>
               </label>
-              <label class="form-feedback__radio control">Скорее отрицательное
-                <input class="control__input" type="radio" name="impression" value="Негативное">
+              <label class="form-feedback__radio control">
+                <input class="visually-hidden control__input" type="radio" name="impression" value="Негативное">
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее отрицательное</span>
               </label>
-              <label class="form-feedback__radio control">Затрудняюсь ответить
-                <input class="control__input" type="radio" name="impression" value="Затрудняюсь">
+              <label class="form-feedback__radio control">
+                <input class="visually-hidden control__input" type="radio" name="impression" value="Затрудняюсь">
+                <span class="control__mark"></span>
+                <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </fieldset>
             <fieldset class="form-feedback__attractions">
               <legend class="form-feedback__title title">Посещенные достопримечательности:</legend>
-              <label class="form-feedback__checkbox control control--checkbox">Мост дьявола
-                <input class="control__input" type="checkbox" name="devil-bridge" checked>
+              <label class="form-feedback__checkbox control control--checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="devil-bridge" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Мост дьявола</span>
               </label>
-              <label class="form-feedback__checkbox control control--checkbox">Гора-Колокол
-                <input class="control__input" type="checkbox" name="bell-mountain" checked>
+              <label class="form-feedback__checkbox control control--checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="bell-mountain" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Гора-Колокол</span>
               </label>
-              <label class="form-feedback__checkbox control control--checkbox">Слайд-парк
-                <input class="control__input" type="checkbox" name="slide-park" checked>
+              <label class="form-feedback__checkbox control control--checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Слайд-парк</span>
               </label>
-              <label class="form-feedback__checkbox control control--checkbox">Красные скалы
-                <input class="control__input" type="checkbox" name="red-rocks">
+              <label class="form-feedback__checkbox control control--checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
+                <span class="control__mark"></span>
+                <span class="control__label">Красные скалы</span>
               </label>
             </fieldset>
             <fieldset class="form-feedback__review">
@@ -160,7 +174,7 @@
   </footer>
   </div>
   <div class="page__modal modal--error modal">
-      <section class="modal__content">
+      <section class="modal__content--error">
         <h2 class="modal__title title">Что-то пошло не так!</h2>
         <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
@@ -168,7 +182,7 @@
       <button class="modal__button modal__button--error button" type="button">Ок</button>
   </div>
   <div class="page__modal modal--accept modal">
-      <section class="modal__content">
+      <section class="modal__content--accept">
         <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
         <p class="modal__description description">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время
         мы опубликуем его на сайте.</p>
