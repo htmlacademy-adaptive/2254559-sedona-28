@@ -1,0 +1,30 @@
+.likes {
+  position: relative;
+  width: 69px;
+  height: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 56px;
+  }
+}
+
+.likes__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.likes__number {
+  position: absolute;
+  left: 38;
+  top: 5px;
+  color: #000000;
+}
