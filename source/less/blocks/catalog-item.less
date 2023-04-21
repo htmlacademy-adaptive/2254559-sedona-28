@@ -18,12 +18,16 @@
   }
 
   &--wide {
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       position: absolute;
       left: 0;
       bottom: 0;
-      width: @desktop-width;
+      width: 648px;
       padding: 22px 20px 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: @desktop-width;
       background-color: rgba(0, 0, 0, 0.3);
     }
   }
