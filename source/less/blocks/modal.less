@@ -38,13 +38,19 @@
   padding: 39px 0 51px;
 
   @media (min-width: @tablet-width) {
-    min-width: 307px;
+    min-width: 444px;
     margin-bottom: 25px;
   }
 }
 
 .modal__title {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__accept-wrapper {
@@ -62,7 +68,6 @@
 
 .modal__button {
   height: 58px;
-  display: block;
   margin: 0 auto;
 
   &--error {

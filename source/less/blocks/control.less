@@ -31,7 +31,27 @@
       background-position: left top;
     }
   }
+
+  &:hover {
+    .control__mark {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    .control__mark {
+      background-color: #d5d5d5;
+    }
+
+    .control__mark::before {
+      opacity: 30%;
+    }
+  }
 }
+
+/*.control__label {
+  min-width: 185px;
+}*/
 
 .control__input[type="radio"]:checked + .control__mark::before {
   content: "";

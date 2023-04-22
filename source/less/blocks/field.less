@@ -5,12 +5,21 @@
 .field__input {
   width: 100%;
   margin-bottom: 16px;
-  padding: 16px;
+  padding: 12px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid transparent;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
 
   &--telephone {
     padding-right: 65px;
@@ -19,6 +28,13 @@
     background-repeat: no-repeat;
     background-position: right;
     color: #000000;
+    border-right: none;
+
+    &:active {
+      background-color: #ffffff;
+      border: 4px solid #e5e5e5;
+      border-right: none;
+    }
   }
 
   &--email {
@@ -28,6 +44,13 @@
     background-repeat: no-repeat;
     background-position: right;
     color: #000000;
+    border-right: none;
+
+    &:active {
+      background-color: #ffffff;
+      border: 4px solid #e5e5e5;
+      border-right: none;
+    }
   }
 
   &--telephone::placeholder,
