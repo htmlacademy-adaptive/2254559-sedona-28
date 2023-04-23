@@ -1,30 +1,28 @@
 .social-list {
   .clear-list();
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    gap: 6px;
-  }
 }
 
 .social-list__link {
   display: block;
   height: 48px;
   width: 48px;
-
-  .social-list__icon {
-    fill: #81b3d2;
-  }
+  padding-top: 16px;
+  text-align: center;
+  background-color: #81b3d2;
 
   &:hover {
-    .social-list__icon {
-      fill: #669ec0;
-    }
+    background-color: #669ec0;
   }
 
   &:active {
+    background-color: #5496bd;
+
     .social-list__icon {
-      fill: #5496bd;
+      fill: #87b5d1;
     }
   }
+}
+
+.social-list__icon {
+  fill: #ffffff;
 }

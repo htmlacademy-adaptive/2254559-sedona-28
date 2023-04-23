@@ -44,12 +44,12 @@
 
         &:hover::before,
         &:hover::after {
-          background-color: rgba(255, 255, 255, 0.6);
+          background-color: #cde1ed;
         }
 
         &:active::before,
         &:active::after {
-          background-color: rgba(255, 255, 255, 0.3);
+          background-color: #a7cadf;
         }
 
         @media (min-width: @tablet-width) {
@@ -58,9 +58,9 @@
       }
     }
 
-    /*&--closed {
+    &--closed {
       display: none;
-    }*/
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -69,6 +69,12 @@
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

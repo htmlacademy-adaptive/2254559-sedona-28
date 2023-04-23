@@ -10,39 +10,6 @@
     width: 520px;
     min-height: 103px;
   }
-
-  &::before {
-    @media (max-width: @tablet-width) {
-      content: "";
-      z-index: 1;
-      position: absolute;
-      bottom: -53px;
-      left: 0;
-      width: 159px;
-      height: 37px;
-      background-image: url("../img/decoration-white.svg");
-      background-repeat: no-repeat;
-      background-size: 159px 37px;
-      background-color: #81b3d2;
-    }
-  }
-
-  &::after {
-    @media (max-width: @tablet-width) {
-      content: "";
-      z-index: 1;
-      position: absolute;
-      bottom: -53px;
-      right: 0;
-      width: 159px;
-      height: 37px;
-      background-image: url("../img/decoration-white.svg");
-      background-repeat: no-repeat;
-      background-size: 159px 37px;
-      background-color: #81b3d2;
-      transform: scaleX(-1);
-    }
-  }
 }
 
 .advantages__title {

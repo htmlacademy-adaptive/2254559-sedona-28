@@ -50,22 +50,22 @@
             <fieldset class="form-feedback__personal-data">
               <legend class="form-feedback__title title">Представьтесь:</legend>
               <label class="form-feedback__input-title field">Имя*:
-                <input class="field__input" name="name" type="text" value="Пётр" required>
+                <input class="field__input" name="name" type="text" placeholder="Имя" required>
               </label>
               <label class="form-feedback__input-title field">Фамилия*:
-                <input class="field__input" name="surname" type="text" value="Пустота" required>
+                <input class="field__input" name="surname" type="text" placeholder="Фамилия" required>
               </label>
               <label class="form-feedback__input-title field">Отчество:
-                <input class="field__input" name="middle-name" type="text" value="Викторович">
+                <input class="field__input" name="middle-name" type="text" placeholder="Отчество">
               </label>
             </fieldset>
             <fieldset class="form-feedback__contacts">
               <legend class="form-feedback__title title">Контактная информация:</legend>
-              <label class="form-feedback__input-title field">Контактный телефон*:
+              <label class="form-feedback__input-title field field--contacts">Контактный телефон*:
                 <input class="field__input field__input--telephone" name="telephone" type="tel"
                   placeholder="Введите телефон" required>
               </label>
-              <label class="form-feedback__input-title field">Электронная почта*:
+              <label class="form-feedback__input-title field field--contacts">Электронная почта*:
                 <input class="field__input field__input--email" name="email" type="email" placeholder="Введите e-mail"
                   required>
               </label>
@@ -131,34 +131,24 @@
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="https://vk.com/htmlacademy">
-          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
-            <path d="M0 0h48v48H0z"/>
-              <g clip-path="url(#a)">
-                <path fill="#fff" fill-rule="evenodd" d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" clip-rule="evenodd"/>
-              </g>
-            <defs>
-              <clipPath id="a"><path fill="#fff" d="M12 12h24v24H12z"/></clipPath>
-            </defs>
+          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none" viewBox="0 0 24 14">
+            <path fill-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" clip-rule="evenodd"/>
           </svg>
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link" href="https://t.me/htmlacademy">
-          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
-            <path d="M0 0h48v48H0z" />
-            <path fill="#fff"
-              d="m34.44 16.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2l-11.07 6.97-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53l18.62-7.18c.87-.32 1.62.2 1.34 1.51Z" />
+          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none" viewBox="0 0 22 18">
+            <path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z"/>
           </svg>
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
-          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
-            <path d="M0 0h48v48H0z" />
-            <path fill="#fff"
-              d="M31.18 17H16.81c-1.5 0-2.81 1.3-2.81 2.8v8.3c0 1.6 1.3 2.9 2.81 2.9h14.37A2.8 2.8 0 0 0 34 28.2v-8.4c.1-1.5-1.2-2.8-2.8-2.8ZM21.03 27.4v-6.8l6.84 3.4-6.84 3.4Z" />
+          <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none" viewBox="0 0 20 14">
+            <path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z"/>
           </svg>
           <span class="visually-hidden">Youtube</span>
         </a>
@@ -174,15 +164,16 @@
     </a>
   </footer>
   </div>
-  <div class="page__modal modal--error modal">
+  <div class="modal-container modal-container--close">
+    <div class="page__modal page__modal--error modal--error modal">
       <section class="modal__content">
         <h2 class="modal__title title">Что-то пошло не так!</h2>
         <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
       </section>
       <button class="modal__button modal__button--error button" type="button">Ок</button>
-  </div>
-  <div class="page__modal modal">
+    </div>
+    <div class="page__modal modal">
       <section class="modal__content">
         <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
         <p class="modal__description description">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время
@@ -191,6 +182,7 @@
       <div class="modal__accept-wrapper">
         <button class="modal__button modal__button--accept button" type="button">Закрыть окно</button>
       </div>
+    </div>
   </div>
 </body>
 
