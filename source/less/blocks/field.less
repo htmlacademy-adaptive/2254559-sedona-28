@@ -2,68 +2,76 @@
   position: relative;
   text-transform: uppercase;
 
-  /*&--contacts::after {
+  &--phone::after {
     content: "";
     position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 206px;
-    width: 58px;
-    height: 58px;
-    background-color: #e6e6e6;
-  }*/
+    top: 39px;
+    left: 225px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone-icon.svg");
+
+    @media (min-width: @tablet-width) {
+      left: 240px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 375px;
+    }
+  }
+
+  &--mail::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 225px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/mail-icon.svg");
+
+    @media (min-width: @tablet-width) {
+      left: 240px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 375px;
+    }
+  }
 }
 
 .field__input {
   width: 100%;
   margin-bottom: 16px;
-  padding: 12px;
+  padding: 16px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
-  border: 4px solid transparent;
+  border: none;
 
-  /*&--background {
-    padding-right: 65px;
-    background-color: #e6e6e6;
-    background-size: 58px 58px;
-    background-repeat: no-repeat;
-    background-position: right 58px top 0;
-    color: #000000;
-    border-right: none;
-  }*/
-
-  &--telephone {
-    padding-right: 65px;
-    background-image: url("../img/phone-icon.svg");
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: right 20px top 16px;
+  &--contacts {
+    background-image: linear-gradient(to right, #f2f2f2 222px, #e6e6e6 50px);
     color: #000000;
     border-right: none;
 
-    &:active {
-      background-color: #ffffff;
-      border: 4px solid #e5e5e5;
-      border-right: none;
+    @media (min-width: @tablet-width) {
+      background-image: linear-gradient(to right, #f2f2f2 237px, #e6e6e6 50px);
     }
-  }
 
-  &--email {
-    padding-right: 65px;
-    background-image: url("../img/mail-icon.svg");
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: right 20px top 16px;
-    color: #000000;
-    border-right: none;
+    @media (min-width: @desktop-width) {
+      background-image: linear-gradient(to right, #f2f2f2 372px, #e6e6e6 50px);
+    }
 
-    &:active {
+    &:hover {
+      background-image: none;
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      padding: 12px 60px 12px 12px;
+      background-image: none;
       background-color: #ffffff;
-      border: 4px solid #e5e5e5;
-      border-right: none;
     }
   }
 
@@ -71,14 +79,14 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
+    padding: 12px;
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
+    outline: none;
   }
 
-  &::placeholder,
-  &--telephone::placeholder,
-  &--email::placeholder {
+  &::placeholder {
     color: #aaaaaa;
   }
 }

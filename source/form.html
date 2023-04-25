@@ -61,12 +61,12 @@
             </fieldset>
             <fieldset class="form-feedback__contacts">
               <legend class="form-feedback__title title">Контактная информация:</legend>
-              <label class="form-feedback__input-title field field--contacts">Контактный телефон*:
-                <input class="field__input field__input--telephone" name="telephone" type="tel"
+              <label class="form-feedback__input-title field field--phone">Контактный телефон*:
+                <input class="field__input field__input--contacts" name="telephone" type="tel"
                   placeholder="Введите телефон" required>
               </label>
-              <label class="form-feedback__input-title field field--contacts">Электронная почта*:
-                <input class="field__input field__input--email" name="email" type="email" placeholder="Введите e-mail"
+              <label class="form-feedback__input-title field field--mail">Электронная почта*:
+                <input class="field__input field__input--contacts" name="email" type="email" placeholder="Введите e-mail"
                   required>
               </label>
             </fieldset>
@@ -165,7 +165,7 @@
   </footer>
   </div>
   <div class="modal-container modal-container--close">
-    <div class="page__modal page__modal--error modal--error modal">
+    <div class="page__modal page__modal--error modal--error modal modal-close">
       <section class="modal__content">
         <h2 class="modal__title title">Что-то пошло не так!</h2>
         <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -173,7 +173,7 @@
       </section>
       <button class="modal__button modal__button--error button" type="button">Ок</button>
     </div>
-    <div class="page__modal modal">
+    <div class="page__modal modal modal-close">
       <section class="modal__content">
         <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
         <p class="modal__description description">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время
