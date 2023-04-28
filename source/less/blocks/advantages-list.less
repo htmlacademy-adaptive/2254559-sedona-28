@@ -5,8 +5,10 @@
   @media (max-width: @tablet-width) {
     padding-top: 36px;
     background-color: #81b3d2;
+  }
 
-    &::before {
+  &::before {
+    @media (max-width: @tablet-width) {
       content: "";
       position: absolute;
       top: -1px;

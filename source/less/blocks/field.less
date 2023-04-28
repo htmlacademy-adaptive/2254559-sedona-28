@@ -1,75 +1,63 @@
 .field {
-  position: relative;
+  display: block;
   text-transform: uppercase;
 
-  &--phone::after {
-    content: "";
+  .field__wrapper::after {
     position: absolute;
-    top: 39px;
-    left: 225px;
-    width: 18px;
-    height: 18px;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 100%;
     background-image: url("../img/phone-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+  }
 
-    @media (min-width: @tablet-width) {
-      left: 240px;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 375px;
+  &--phone {
+    .field__wrapper::after {
+      content: "";
     }
   }
 
-  &--mail::after {
-    content: "";
-    position: absolute;
-    top: 39px;
-    left: 225px;
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/mail-icon.svg");
-
-    @media (min-width: @tablet-width) {
-      left: 240px;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 375px;
+  &--mail {
+    .field__wrapper::after {
+      content: "";
+      background-image: url("../img/mail-icon.svg");
     }
   }
 }
 
+.field__label {
+  margin-left: 16px;
+  display: block;
+}
+
+.field__wrapper {
+  display: block;
+  position: relative;
+}
+
 .field__input {
   width: 100%;
-  margin-bottom: 16px;
-  padding: 16px;
+  padding: 12px;
   font-family: inherit;
+  padding-right: 58px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid transparent;
+  color: #000000;
+  outline: none;
 
   &--contacts {
-    background-image: linear-gradient(to right, #f2f2f2 222px, #e6e6e6 50px);
-    color: #000000;
-    border-right: none;
-
-    @media (min-width: @tablet-width) {
-      background-image: linear-gradient(to right, #f2f2f2 237px, #e6e6e6 50px);
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: linear-gradient(to right, #f2f2f2 372px, #e6e6e6 50px);
-    }
-
     &:hover {
       background-image: none;
       background-color: #e5e5e5;
     }
 
     &:focus {
-      padding: 12px 60px 12px 12px;
       background-image: none;
       background-color: #ffffff;
     }
@@ -80,10 +68,8 @@
   }
 
   &:focus {
-    padding: 12px;
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-    outline: none;
+    border-color: #e5e5e5;
   }
 
   &::placeholder {

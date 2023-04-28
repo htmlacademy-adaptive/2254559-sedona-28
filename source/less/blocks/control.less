@@ -49,23 +49,27 @@
   }
 }
 
-.control__input[type="radio"]:checked + .control__mark::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #333333;
+.control__input {
+  &:checked {
+    & + .control__mark::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #333333;
+    }
+  }
+
+  &[type="checkbox"] {
+    &:checked + .control__mark::before {
+      left: 12px;
+      width: 22px;
+      background-image: url("../img/checkbox-mark.svg");
+      background-color: transparent;
+    }
+  }
 }
 
-.control__input[type="checkbox"]:checked + .control__mark::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 12px;
-  width: 22px;
-  height: 16px;
-  background-image: url("../../img/checkbox-mark.svg");
-}

@@ -15,25 +15,18 @@
     height: 57px;
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding: 77px 0 92px;
     background-size: @tablet-width 518px;
-
-    &::after {
-      background-image: url("../img/intro-triangle-tablet.svg");
-    }
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     background-size: @desktop-width 518px;
-
-    &::after {
-      background-image: url("../img/intro-triangle-desktop.svg");
-    }
   }
 }
 
