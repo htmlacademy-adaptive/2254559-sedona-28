@@ -1,9 +1,7 @@
 .hero {
   position: relative;
-  margin-bottom: 37px;
-  padding-top: 52px;
+  padding: 52px 0 67px;
   width: @mobile-width;
-  min-height: 158px;
   background-image: url("../img/hero-background.jpg");
   background-size: @mobile-width 214px;
   background-repeat: no-repeat;
@@ -17,30 +15,19 @@
     height: 57px;
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    min-height: 291px;
-    margin-bottom: 66px;
-    padding-top: 90px;
+    padding: 95px 0 117px;
     background-size: @tablet-width 298px;
-
-    &::after {
-      background-image: url("../img/intro-triangle-tablet.svg");
-    }
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    min-height: 296px;
-    margin-bottom: 100px;
-    padding-top: 101px;
+    padding: 101px 0 120px;
     background-size: @desktop-width 298px;
-
-    &::after {
-      background-image: url("../img/intro-triangle-desktop.svg");
-    }
   }
 }
 
@@ -51,6 +38,5 @@
   @media (min-width: @tablet-width) {
     width: 457px;
     height: 78px;
-    margin: 0 auto;
   }
 }

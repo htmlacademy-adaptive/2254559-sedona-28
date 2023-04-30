@@ -62,7 +62,6 @@
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    min-height: 256px;
     padding: 52px 33px 31px;
   }
 
@@ -73,6 +72,8 @@
 
   &--small {
     position: relative;
+    width: auto;
+    padding: 0;
 
     @media (max-width: @tablet-width) {
       padding: 24px 26px;
@@ -112,6 +113,9 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
   }
 }
 
@@ -123,12 +127,5 @@
 
   @media (min-width: @desktop-width) {
     width: 800px;
-  }
-}
-
-.advantages-item__wrapper {
-  @media (min-width: @tablet-width) {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
   }
 }
