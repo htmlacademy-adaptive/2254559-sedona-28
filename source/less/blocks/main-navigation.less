@@ -3,63 +3,18 @@
 
   @media (max-width: @tablet-width) {
     width: @mobile-width;
+  }
 
-    &--nojs {
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
+  &--nojs {
+    @media (max-width: @tablet-width) {
+      position: static;
       width: @mobile-width;
+      padding-top: 96px;
+      display: none;
 
       .main-navigation__toggle {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        display: block;
-        width: 62px;
-        height: 57px;
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          top: 28px;
-          left: 16px;
-          width: 31px;
-          height: 4px;
-          background-color: #ffffff;
-        }
-
-        &::before {
-          transform: rotate(45deg);
-        }
-
-        &::after {
-          transform: rotate(-45deg);
-        }
-
-        &:hover::before,
-        &:hover::after {
-          background-color: #cde1ed;
-        }
-
-        &:active::before,
-        &:active::after {
-          background-color: #a7cadf;
-        }
-
-        @media (min-width: @tablet-width) {
-          display: none;
-        }
+        display: none;
       }
-    }
-
-    &--closed {
-      display: none;
     }
   }
 
@@ -73,6 +28,46 @@
 }
 
 .main-navigation__toggle {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 62px;
+  height: 57px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 16px;
+    width: 31px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #cde1ed;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #a7cadf;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }

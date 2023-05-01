@@ -1,0 +1,128 @@
+.modal-container {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--close {
+    display: none;
+  }
+}
+
+.modal-container__modal {
+  width: @mobile-width;
+  margin: 116px auto 0;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    margin-top: 283px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 244px;
+  }
+
+  &--success {
+    margin-top: 402px;
+
+    @media (min-width: @tablet-width) {
+      width: 640px;
+      margin-top: 162px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 145px;
+    }
+  }
+}
+
+.modal-container__content {
+  padding: 45px 42px 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 38px 47px 14px;
+  }
+
+  &--success {
+    padding: 36px 38px 27px;
+
+    @media (min-width: @tablet-width) {
+      padding: 52px 98px 29px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 50px 98px 27px;
+    }
+  }
+}
+
+.modal-container__title {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-container__description {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 44px;
+  }
+
+  &--success {
+    padding-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 24px;
+    }
+  }
+}
+
+.modal-container__button {
+  margin: 0 auto 35px;
+  padding: 18px 18px 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  &--error {
+    width: 180px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
+  }
+
+  &--accept {
+    width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: 458px;
+    }
+  }
+}
+
+.modal-container__accept-wrapper {
+  width: @mobile-width;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 44px;
+  }
+}

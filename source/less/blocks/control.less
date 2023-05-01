@@ -21,14 +21,7 @@
 
   &--checkbox {
     .control__mark {
-      position: relative;
-      width: 46px;
-      height: 46px;
-      display: block;
       border-radius: 4px;
-      background-color: #f2f2f2;
-      background-size: 46px 46px;
-      background-position: left top;
     }
   }
 
@@ -54,10 +47,11 @@
     & + .control__mark::before {
       content: "";
       position: absolute;
-      top: 15px;
-      left: 15px;
+      top: 50%;
+      left: 50%;
       width: 16px;
       height: 16px;
+      transform: translate(-50%, -50%);
       border-radius: 50%;
       background-color: #333333;
     }
@@ -65,7 +59,6 @@
 
   &[type="checkbox"] {
     &:checked + .control__mark::before {
-      left: 12px;
       width: 22px;
       background-image: url("../img/checkbox-mark.svg");
       background-color: transparent;
