@@ -48,17 +48,13 @@
 
 .main-header__logo {
   position: absolute;
-  left: 67px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    top: 0;
-    left: 291px;
-  }
-
   @media (min-width: @desktop-width) {
-    left: 480px;
     width: 240px;
   }
 }
