@@ -1,4 +1,5 @@
 .advantages-item {
+  position: relative;
   background-color: #eeeeee;
 
   &--background {
@@ -25,57 +26,110 @@
       padding: 0;
       grid-column: 1 / 4;
       grid-template-columns: repeat(3, 256px);
+    }
 
-      .advantages-item__photo {
+    .advantages-item__photo {
+      @media (min-width: @tablet-width) {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
       }
+    }
 
-      .advantages-item__text-wrapper {
+    .advantages-item__text-wrapper {
+      @media (min-width: @tablet-width) {
         grid-column: 3 / 4;
       }
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: repeat(3, 400px);
+    }
+  }
+
+  &--decorate::after {
+    @media (max-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 284px;
+      height: 1px;
+      background-color: #d6d6d6;
     }
   }
 }
 
 .advantages-item__text-wrapper {
-  padding: 54px 18px 40px;
+  @media (max-width: @tablet-width) {
+    padding: 37px 18px;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 256px;
-    min-height: 256px;
+    padding: 52px 33px 31px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 400px;
+    padding: 52px 50px 51px;
+  }
+
+  &--small {
+    position: relative;
+    width: auto;
+    padding: 0;
+
+    @media (max-width: @tablet-width) {
+      padding: 24px 26px;
+    }
+  }
+}
+
+.advantages-item__title {
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 70px;
   }
 }
 
 .advantages-item__number {
   display: block;
   text-align: center;
+
+  @media (max-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages-item__service-list {
+  @media (max-width: @tablet-width) {
+    padding: 23px 18px 46px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
   }
 }
 
 .advantages-item__photo {
   @media (min-width: @tablet-width) {
-    width: 512px;
+    width: 100%;
+    grid-column: 2 / 4;
     object-fit: cover;
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
-  }
-}
-
-.advantages-item__wrapper {
-  @media (min-width: @tablet-width) {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
   }
 }

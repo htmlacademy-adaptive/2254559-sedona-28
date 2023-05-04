@@ -1,4 +1,7 @@
 .button {
+  display: block;
+  padding: 0;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -6,4 +9,17 @@
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

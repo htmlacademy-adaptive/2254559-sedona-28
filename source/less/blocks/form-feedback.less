@@ -1,32 +1,65 @@
 .form-feedback {
+  @media (max-width: @tablet-width) {
+    padding: 0;
+    border-top: 1px solid #e5e5e5;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 280px 298px;
-    grid-template-rows: 338px 162px 189px 214px 58px;
-    column-gap: 70px;
+    grid-template-columns: 295px 295px;
+    column-gap: 58px;
     row-gap: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 430px 400px;
-    grid-template-rows: 338px 134px 189px 214px 58px;
-    column-gap: 130px;
+    grid-template-columns: 430px 430px;
+    column-gap: 100px;
     row-gap: 56px;
-  }
-}
-
-.form-feedback__wrapper {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 64px;
   }
 }
 
 .form-feedback__personal-data {
   .clear-list();
 
-  margin-bottom: 64px;
+  position: relative;
+  border: none;
+
+  @media (max-width: @tablet-width) {
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      right: -28px;
+      width: 1px;
+      height: calc(100% + 68px);
+      background-color: #dbdbdb;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -49px;
+    }
+  }
+}
+
+.form-feedback__title {
+  margin: 0 auto 20px;
+  padding-top: 24px;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.form-feedback__input-title {
+  margin-bottom: 16px;
+
+  &:last-child {
     margin-bottom: 0;
   }
 }
@@ -34,53 +67,219 @@
 .form-feedback__contacts {
   .clear-list();
 
-  margin-bottom: 59px;
+  position: relative;
+  border: none;
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+  @media (max-width: @tablet-width) {
+    padding: 0 0 24px;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
 .form-feedback__impression {
   .clear-list();
 
+  position: relative;
+  border: none;
+
+  @media (max-width: @tablet-width) {
+    padding: 0 0 8px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
     grid-column: 1 / 3;
+  }
+
+  .form-feedback__title {
+    @media (min-width: @tablet-width) {
+      width: 402px;
+    }
+  }
+
+  &::before,
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: -41px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+
+.form-feedback__impression-wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17px 53px;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.form-feedback__radio {
+  @media (max-width: @tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.form-feedback__checkbox {
+  @media (max-width: @tablet-width) {
+    margin-bottom: 16px;
   }
 }
 
 .form-feedback__attractions {
   .clear-list();
 
-  margin-bottom: 49px;
+  position: relative;
+  border: none;
+
+  @media (max-width: @tablet-width) {
+    padding: 0 0 8px;
+    border-bottom: 1px solid #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
     grid-column: 1 / 3;
+  }
+
+  .form-feedback__title {
+    @media (min-width: @tablet-width) {
+      width: 402px;
+      padding: 0 47px;
+    }
+  }
+
+  &::before,
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: -55px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+.form-feedback__attractions-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    display: flex;
+    padding: 45px 31px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .form-feedback__review {
   .clear-list();
 
+  position: relative;
   margin-bottom: 56px;
+  border: none;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     grid-column: 1 / 3;
   }
+
+  .form-feedback__title {
+    @media (min-width: @tablet-width) {
+      width: 402px;
+    }
+  }
+
+  &::before,
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: -41px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      left: auto;
+      right: 0;
+    }
+  }
 }
 
 .form-feedback__review-text {
   width: 279px;
+  padding: 16px;
   min-height: 150px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  resize: none;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -88,17 +287,48 @@
 
   @media (min-width: @tablet-width) {
     width: 648px;
-    height: 160px;
+    min-height: 160px;
   }
 
   @media (min-width: @desktop-width) {
     width: @tablet-width;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.form-feedback__button {
+  padding: 16px;
+
+  @media (max-width: @tablet-width) {
+    width: 280px;
+    margin: 0 auto 3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 96px;
   }
 }
 
 .form-feedback__note {
+  padding: 0 20px;
   display: block;
   font-size: 12px;
+  text-align: right;
   text-transform: uppercase;
-  color: lighten(#333333, 60%);
+  color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    align-self: center;
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 96px;
+  }
 }

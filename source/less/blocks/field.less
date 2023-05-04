@@ -1,21 +1,78 @@
 .field {
+  display: block;
   text-transform: uppercase;
+
+  .field__wrapper::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 100%;
+    background-image: url("../img/phone-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+  }
+
+  &--phone {
+    .field__wrapper::after {
+      content: "";
+    }
+  }
+
+  &--mail {
+    .field__wrapper::after {
+      content: "";
+      background-image: url("../img/mail-icon.svg");
+    }
+  }
+}
+
+.field__label {
+  margin-left: 16px;
+  display: block;
+}
+
+.field__wrapper {
+  display: block;
+  position: relative;
 }
 
 .field__input {
+  width: 100%;
+  padding: 12px;
+  font-family: inherit;
+  padding-right: 58px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid transparent;
+  color: #000000;
+  outline: none;
 
-  &--telephone,
-  &--email {
-    color: #000000;
+  &--contacts {
+    &:hover {
+      background-image: none;
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-image: none;
+      background-color: #ffffff;
+    }
   }
 
-  &--telephone::placeholder,
-  &--email::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
+  }
+
+  &::placeholder {
+    color: #aaaaaa;
   }
 }

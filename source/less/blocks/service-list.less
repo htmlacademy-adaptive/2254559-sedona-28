@@ -6,15 +6,23 @@
 }
 
 .service-list__item {
-  padding: 25px 18px;
+  padding-left: 47px;
+
+  @media (max-width: @tablet-width) {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 60px 33px;
+    padding: 158px 33px 60px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 69px 50px;
+    padding: 169px 50px 69px;
   }
 }
