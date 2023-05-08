@@ -1,9 +1,14 @@
 .index-hero {
   position: relative;
   padding: 90px 19px 86px;
-  background-image: url("../img/hero-background.jpg");
-  background-size: @mobile-width;
+  background-image: url("../img/hero-background-mobile.jpg");
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background-mobile@2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -18,14 +23,20 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
     padding: 77px 0 92px;
-    background-size: @tablet-width 518px;
+    background-image: url("../img/hero-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
-    background-size: @desktop-width 518px;
+    background-image: url("../img/hero-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-desktop@2x.jpg");
+    }
   }
 }
 
