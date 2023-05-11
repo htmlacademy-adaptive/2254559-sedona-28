@@ -62,6 +62,9 @@
             <p class="advantages-item__description description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture class="advantages-item__picture">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-city-desktop.webp 1x, img/advantages-city-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-city-tablet.webp 1x, img/advantages-city-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/advantages-city-mobile.webp 1x, img/advantages-city-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" width="800" height="256" srcset="img/advantages-city-desktop.jpg 1x, img/advantages-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/advantages-city-tablet.jpg 1x, img/advantages-city-tablet@2x.jpg 2x">
             <img class="advantages-item__photo" src="img/advantages-city-mobile.jpg" srcset="img/advantages-city-mobile@2x.jpg 2x" width="320" height="260" alt="фотография города.">
@@ -90,9 +93,12 @@
             <p class="advantages-item__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture class="advantages-item__picture">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.webp 1x, img/advantages-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.webp 1x, img/advantages-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/advantages-bridge-mobile.webp 1x, img/advantages-bridge-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" width="800" height="256" srcset="img/advantages-bridge-desktop.jpg 1x, img/advantages-bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/advantages-bridge-tablet.jpg 1x, img/advantages-bridge-tablet@2x.jpg 2x">
-            <img class="advantages-item__photo" src="img/advantages-bridge-mobile.jpg" srcset="img/advantages-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="фотография города.">
+            <img class="advantages-item__photo" src="img/advantages-bridge-mobile.jpg" srcset="img/advantages-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="фотография моста.">
           </picture>
         </li>
         <li class="advantages-list__item advantages-item advantages-item--decorate">
@@ -154,7 +160,7 @@
       <a class="main-footer__developer-link developer-link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer-link__description">Разработано</p>
         <svg class="developer-link__image" width="29" height="35">
-          <use xlink:href="../img/sprite.svg#icon-developer">
+          <use xlink:href="../img/sprite.svg#icon-developer"></use>
         </svg>
       </a>
     </footer>
