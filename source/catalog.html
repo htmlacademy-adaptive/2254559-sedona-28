@@ -55,6 +55,9 @@
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-list__item--wide catalog-item catalog-item--wide">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-photo-road-desktop.webp 1x, img/catalog-photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-photo-road-tablet.webp 1x, img/catalog-photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-photo-road-mobile.webp 1x, img/catalog-photo-road-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" width="1200" height="400" srcset="img/catalog-photo-road-desktop.jpg 1x, img/catalog-photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="648" height="400" srcset="img/catalog-photo-road-tablet.jpg 1x, img/catalog-photo-road-tablet@2x.jpg 2x">
               <img class="catalog-item__photo" src="img/catalog-photo-road-mobile.jpg" srcset="img/catalog-photo-road-mobile@2x.jpg 2x" width="280" height="280"
@@ -66,8 +69,8 @@
                 <p class="catalog-item__autor">Автор фото: Борис</p>
               </div>
               <button class="catalog-item__likes likes" type="button">
-                <svg class="likes__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20">
-                  <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"/>
+                <svg class="likes__icon" width="22" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="likes__number">1350</span>
               </button>
@@ -75,6 +78,9 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-photo-plant-desktop.webp 1x, img/catalog-photo-plant-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-photo-plant-tablet.webp 1x, img/catalog-photo-plant-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-photo-plant-mobile.webp 1x, img/catalog-photo-plant-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog-photo-plant-desktop.jpg 1x, img/catalog-photo-plant-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog-photo-plant-tablet.jpg 1x, img/catalog-photo-plant-tablet@2x.jpg 2x">
               <img class="catalog-item__photo" src="img/catalog-photo-plant-mobile.jpg" srcset="img/catalog-photo-plant-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус.">
@@ -85,8 +91,8 @@
                 <p class="catalog-item__autor">Автор фото: Сергей</p>
               </div>
               <button class="catalog-item__likes likes" type="button">
-                <svg class="likes__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20">
-                  <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"/>
+                <svg class="likes__icon" width="22" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="likes__number">143</span>
               </button>
@@ -94,6 +100,9 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-photo-road-north-desktop.webp 1x, img/catalog-photo-road-north-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-photo-road-north-tablet.webp 1x, img/catalog-photo-road-north-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-photo-road-north-mobile.webp 1x, img/catalog-photo-road-north-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog-photo-road-north-desktop.jpg 1x, img/catalog-photo-road-north-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog-photo-road-north-tablet.jpg 1x, img/catalog-photo-road-north-tablet@2x.jpg 2x">
               <img class="catalog-item__photo" src="img/catalog-photo-road-north-mobile.jpg" srcset="img/catalog-photo-road-north-mobile@2x.jpg 2x" width="280" height="280"
@@ -105,8 +114,8 @@
                 <p class="catalog-item__autor">Автор фото: Петр</p>
               </div>
               <button class="catalog-item__likes likes" type="button">
-                <svg class="likes__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20">
-                  <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"/>
+                <svg class="likes__icon" width="22" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="likes__number">96</span>
               </button>
@@ -114,6 +123,9 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-photo-devil-bridge-desktop.webp 1x, img/catalog-photo-devil-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-photo-devil-bridge-tablet.webp 1x, img/catalog-photo-devil-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-photo-devil-bridge-mobile.webp 1x, img/catalog-photo-devil-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog-photo-devil-bridge-desktop.jpg 1x, img/catalog-photo-devil-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog-photo-devil-bridge-tablet.jpg 1x, img/catalog-photo-devil-bridge-tablet@2x.jpg 2x">
               <img class="catalog-item__photo" src="img/catalog-photo-devil-bridge-mobile.jpg" srcset="img/catalog-photo-devil-bridge-mobile@2x.jpg 2x" width="280" height="280"
@@ -125,8 +137,8 @@
                 <p class="catalog-item__autor">Автор фото: Антон</p>
               </div>
               <button class="catalog-item__likes likes" type="button">
-                <svg class="likes__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20">
-                  <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"/>
+                <svg class="likes__icon" width="22" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="likes__number">254</span>
               </button>
@@ -141,6 +153,9 @@
           очередной раз!</p>
         <a class="presentation__link" href="">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-screen-video-desktop.webp 1x, img/catalog-screen-video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-screen-video-tablet.webp 1x, img/catalog-screen-video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/catalog-screen-video-mobile.webp 1x, img/catalog-screen-video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" width="800" height="500" srcset="img/catalog-screen-video-desktop.jpg 1x, img/catalog-screen-video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" width="648" height="500" srcset="img/catalog-screen-video-tablet.jpg 1x, img/catalog-screen-video-tablet@2x.jpg 2x">
             <img class="presentation__image" src="img/catalog-screen-video-mobile.jpg" srcset="img/catalog-screen-video-mobile@2x.jpg 2x" width="280" height="177"
@@ -154,36 +169,25 @@
       <p class="main-footer__hashtag">#visitsedona</p>
       <ul class="main-footer__social-list social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://vk.com/htmlacademy">
-            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none" viewBox="0 0 24 14">
-              <path fill-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" clip-rule="evenodd"/>
-            </svg>
+          <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://t.me/htmlacademy">
-            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none" viewBox="0 0 22 18">
-              <path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z"/>
-            </svg>
+          <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
-            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none" viewBox="0 0 20 14">
-              <path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z"/>
-            </svg>
+          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
       <a class="main-footer__developer-link developer-link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer-link__description">Разработано</p>
-        <svg class="developer-link__image" xmlns="http://www.w3.org/2000/svg" width="29" height="35" fill="none"
-          viewBox="0 0 29 35">
-          <path
-            d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+        <svg class="developer-link__image" width="29" height="35">
+          <use xlink:href="../img/sprite.svg#icon-developer"></use>
         </svg>
       </a>
     </footer>
