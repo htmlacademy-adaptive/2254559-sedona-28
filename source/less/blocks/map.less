@@ -9,8 +9,10 @@
 .map__iframe {
   width: 100%;
   height: 350px;
-  background-image: url("../img/map-image-mobile.jpg");
-  background-size: 100%;
+  background-image: url("../img/map-image-mobile.jpg"),
+    url("../img/sprite.svg#map-marker");
+  background-size: 100%, 27px 27px;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map-image-mobile@2x.jpg");

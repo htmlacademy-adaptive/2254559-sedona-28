@@ -57,6 +57,13 @@
     }
   }
 
+  &:disabled {
+    & + .control__mark::before,
+    & ~ .control {
+      opacity: 20%;
+    }
+  }
+
   &[type="checkbox"] {
     &:checked + .control__mark::before {
       width: 22px;

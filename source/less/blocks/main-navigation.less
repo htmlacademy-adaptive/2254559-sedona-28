@@ -1,25 +1,25 @@
 .main-navigation {
   position: relative;
-
-  @media (max-width: @tablet-width) {
-    width: @mobile-width;
-  }
+  width: @mobile-width;
 
   &--nojs {
-    @media (max-width: @tablet-width) {
-      position: static;
-      width: @mobile-width;
-      padding-top: 96px;
-      display: none;
+    position: static;
+    width: @mobile-width;
+    padding-top: 96px;
+    display: none;
 
-      .main-navigation__toggle {
-        display: none;
-      }
+    .main-navigation__toggle {
+      display: none;
     }
   }
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
+
+    &--nojs {
+      display: block;
+      padding: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {

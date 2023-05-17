@@ -1,11 +1,10 @@
 .service-item__title {
-  @media (max-width: @tablet-width) {
-    text-align: left;
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 34px;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,8 +13,10 @@
 }
 
 .service-item__description {
-  @media (max-width: @tablet-width) {
-    text-align: left;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
   }
 }
 

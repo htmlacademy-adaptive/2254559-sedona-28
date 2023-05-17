@@ -1,25 +1,25 @@
 .advantages-list {
   .clear-list();
   position: relative;
-
-  @media (max-width: @tablet-width) {
-    padding-top: 36px;
-    background-color: #81b3d2;
-  }
+  padding-top: 36px;
+  background-color: #81b3d2;
 
   &::before {
-    @media (max-width: @tablet-width) {
-      content: "";
-      position: absolute;
-      top: -1px;
-      left: 0;
-      width: 100%;
-      height: 37px;
-      background-image: url("../img/sprite.svg#advantages-triangles");
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/sprite.svg#advantages-triangles");
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 256px);
     grid-template-rows: repeat(4, auto);

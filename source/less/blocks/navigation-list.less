@@ -11,23 +11,27 @@
 
   &:not(:first-child)::before,
   &:not(:last-child)::after {
-    @media (max-width: @tablet-width) {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      height: 1px;
-      width: @mobile-width;
-      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 1px;
+    width: @mobile-width;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 
   &:not(:last-child)::after {
-    @media (max-width: @tablet-width) {
-      top: auto;
-      bottom: 0;
-      box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+    top: auto;
+    bottom: 0;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 
@@ -63,23 +67,21 @@
   }
 
   &:hover {
-    @media (max-width: @tablet-width) {
-      background-color: #669ec0;
-    }
+    background-color: #669ec0;
 
     @media (min-width: @tablet-width) {
+      background-color: transparent;
       color: #81b3d2;
     }
   }
 
   &:active {
-    @media (max-width: @tablet-width) {
-      background-color: #5496bd;
-      color: rgba(255, 255, 255, 0.3);
-    }
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 
     @media (min-width: @tablet-width) {
       color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
     }
   }
 
