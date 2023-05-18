@@ -1,25 +1,25 @@
 .main-navigation {
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
   width: @mobile-width;
 
   &--nojs {
     position: static;
     width: @mobile-width;
     padding-top: 96px;
-    display: none;
+  }
 
-    .main-navigation__toggle {
-      display: none;
-    }
+  &--closed {
+    display: none;
   }
 
   @media (min-width: @tablet-width) {
+    position: relative;
     width: @tablet-width;
-
-    &--nojs {
-      display: block;
-      padding: 0;
-    }
+    display: block;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,6 +56,10 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &--nojs {
+    display: none;
   }
 
   &:hover::before,

@@ -2,35 +2,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 9px;
+  gap: 15px;
   padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
 
+  @media (min-width: @tablet-width) {
+    gap: 10px;
+  }
+
   &:hover {
     .likes__icon {
-      fill: #81b3d2;
+      color: #81b3d2;
     }
   }
 
   &:active {
     .likes__icon {
-      fill: #f81818;
+      color: #f81818;
     }
   }
 }
 
 .likes__icon {
-  fill: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 
   @media (min-width: @desktop-width) {
-    fill: #ffffff;
+    color: #ffffff;
   }
 }
 
 .likes__number {
   color: #000000;
+  font-weight: 700;
 
   @media (min-width: @desktop-width) {
     color: #ffffff;

@@ -19,12 +19,13 @@
     <header class="main-header">
       <a class="main-header__logo logo" href="index.html">
         <img class="logo__image" src="img/content-svg/logo.svg" width="185" height="96" alt="Логотип Седона.">
+        <span class="visually-hidden">Перейти на главную</span>
       </a>
-      <button class="main-header__toggle" type="button">
+      <button class="main-header__toggle main-header__toggle--nojs" type="button"> <!--main-header__toggle--nojs" /*Скрывает кнопку бургера*/-->
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <button class="main-navigation__toggle" type="button">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">  <!--main-navigation--closed  /*Скрывает меню*/-->
+        <button class="main-navigation__toggle main-navigation__toggle--nojs" type="button"> <!--main-navigation__toggle--nojs /*скрывает кнопку закрытия*/-->
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-navigation__list navigation-list">
@@ -97,7 +98,7 @@
                 <label class="form-feedback__radio control">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="Позитивное" checked>
                   <span class="control__mark"></span>
-                  <span class="control__label">Скорее</span>
+                  <span class="control__label">Скорее положительное</span>
                 </label>
                 <label class="form-feedback__radio control">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="Негативное">
@@ -117,7 +118,7 @@
                 <label class="form-feedback__checkbox control control--checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="devil-bridge" checked>
                   <span class="control__mark"></span>
-                  <span class="control__label">Мост дьявола</span>
+                  <span class="control__label">Мост Дьявола</span>
                 </label>
                 <label class="form-feedback__checkbox control control--checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="bell-mountain" checked>
@@ -170,11 +171,12 @@
         <svg class="developer-link__image" width="29" height="35">
           <use xlink:href="../img/sprite.svg#icon-developer"></use>
         </svg>
+        <span class="visually-hidden">Перейти на сайт HTMLAcademy</span>
       </a>
     </footer>
   </div>
-  <div class="modal-container modal-container--close">
-    <div class="modal-container__window">
+  <div class="modal-container modal-container--close"> <!--Контейнер модального окна скрыт в стилях-->
+    <div class="modal-container__window modal-container__window--error">
       <section class="modal-container__content">
         <h2 class="modal-container__title title">Что-то пошло не так!</h2>
         <p class="modal-container__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -183,11 +185,11 @@
       <button class="modal-container__button modal-container__button--error button" type="button">Ок</button>
     </div>
   </div>
-  <div class="modal-container modal-container--close">
+  <div class="modal-container modal-container--close">  <!--Контейнер модального окна скрыт в стилях-->
     <div class="modal-container__window modal-container__window--success">
       <section class="modal-container__content modal-container__content--success">
         <h2 class="modal-container__title title">Ваш отзыв отправлен!</h2>
-        <p class="modal-container__description modal-container__description--success description">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <p class="modal-container__description modal-container__description--success description">Спасибо за ваше участие, ваш&ensp;<br class="modal-container__wrap">отзыв уже поступил к нам.&ensp;<br class="modal-container__wrap">В ближайшее время
         мы опубликуем его на сайте.</p>
       </section>
       <div class="modal-container__accept-wrapper">

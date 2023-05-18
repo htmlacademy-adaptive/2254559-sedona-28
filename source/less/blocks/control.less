@@ -57,18 +57,16 @@
     }
   }
 
-  &:disabled {
-    & + .control__mark::before,
-    & ~ .control {
-      opacity: 20%;
-    }
-  }
-
   &[type="checkbox"] {
     &:checked + .control__mark::before {
       width: 22px;
       background-image: url("../img/sprite.svg#icon-checkbox-mark");
       background-color: transparent;
     }
+  }
+
+  &:disabled + .control__mark,
+  &:disabled ~ .control__label {
+    opacity: 20%;
   }
 }
