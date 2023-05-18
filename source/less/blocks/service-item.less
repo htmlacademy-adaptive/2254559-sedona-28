@@ -1,11 +1,12 @@
 .service-item__title {
-  @media (max-width: @tablet-width) {
-    text-align: left;
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
+  padding-top: 8px;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 20px;
+    padding-top: 0;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,8 +15,18 @@
 }
 
 .service-item__description {
-  @media (max-width: @tablet-width) {
-    text-align: left;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
+
+.service-item__word-wrap {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
@@ -23,13 +34,10 @@
 .service-item--food,
 .service-item--souvenirs {
   background-repeat: no-repeat;
-
-  @media (max-width: @tablet-width) {
-    background-size: 40px 40px;
-  }
+  background-size: 40px 40px;
 
   @media (min-width: @tablet-width) {
-    background-size: 77px 72px;
+    background-size: 78px 76px;
     background-position: left 50% top 60px;
   }
 
@@ -49,4 +57,8 @@
 
 .service-item--souvenirs {
   background-image: url("../img/sprite.svg#service-souvenirs");
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/sprite.svg#service-souvenirs-desktop");
+  }
 }

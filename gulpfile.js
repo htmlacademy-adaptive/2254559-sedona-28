@@ -28,7 +28,7 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-//HTML
+//Html
 
 const html = () => {
   return gulp.src('source/*.html')
@@ -113,11 +113,18 @@ const server = (done) => {
   done();
 }
 
+//Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 //Build

@@ -1,6 +1,9 @@
 .page-wrapper {
   width: @mobile-width;
+  min-height: 100%;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @media (min-width: @tablet-width) {

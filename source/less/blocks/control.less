@@ -64,4 +64,9 @@
       background-color: transparent;
     }
   }
+
+  &:disabled + .control__mark,
+  &:disabled ~ .control__label {
+    opacity: 20%;
+  }
 }
