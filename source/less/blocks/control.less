@@ -57,6 +57,12 @@
     }
   }
 
+  &:focus {
+    & + .control__mark {
+      outline: 2px solid #81b3d2;
+    }
+  }
+
   &[type="checkbox"] {
     &:checked + .control__mark::before {
       width: 22px;
