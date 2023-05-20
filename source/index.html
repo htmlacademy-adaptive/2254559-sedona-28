@@ -21,11 +21,11 @@
         <img class="logo__image" src="img/content-svg/logo.svg" width="185" height="96" alt="Логотип Седона.">
         <span class="visually-hidden">Перейти на главную</span>
       </a>
-      <button class="main-header__toggle main-header__toggle--nojs" type="button"> <!--main-header__toggle--nojs" /*Скрывает кнопку бургера*/-->
+      <button class="main-header__toggle main-header__toggle--nojs" type="button"> <!-- "main-header__toggle--nojs"  /*Скрывает кнопку бургера при отключенном JS*/-->
       <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">  <!--main-navigation--closed  /*Скрывает меню*/-->
-        <button class="main-navigation__toggle main-navigation__toggle--nojs" type="button"> <!--main-navigation__toggle--nojs /*скрывает кнопку закрытия*/-->
+      <nav class="main-navigation main-navigation--nojs">  <!--main-navigation--nojs  /*Показывает меню при отключенном JS*/-->
+        <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <ul class="main-navigation__list navigation-list">
@@ -67,7 +67,7 @@
           <picture class="advantages-item__picture">
             <source type="image/webp" media="(min-width: 1200px)" width="800" height="256" srcset="img/advantages-city-desktop.webp 1x, img/advantages-city-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" width="800" height="256" srcset="img/advantages-city-tablet.webp 1x, img/advantages-city-tablet@2x.webp 2x">
-            <source type="image/webp" width="320" height="260"srcset="img/advantages-city-mobile.webp 1x, img/advantages-city-mobile@2x.webp 2x">
+            <source type="image/webp" width="320" height="260" srcset="img/advantages-city-mobile.webp 1x, img/advantages-city-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" width="800" height="256" srcset="img/advantages-city-desktop.jpg 1x, img/advantages-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" width="512" height="256" srcset="img/advantages-city-tablet.jpg 1x, img/advantages-city-tablet@2x.jpg 2x">
             <img class="advantages-item__photo" src="img/advantages-city-mobile.jpg" srcset="img/advantages-city-mobile@2x.jpg 2x" width="320" height="260" alt="фотография города.">
