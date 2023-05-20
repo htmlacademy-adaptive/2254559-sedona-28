@@ -1,19 +1,21 @@
 .main-navigation {
+  display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   width: @mobile-width;
 
   &--nojs {
+    display: block;
     position: static;
     width: @mobile-width;
     padding-top: 96px;
-  }
 
-  /*&--closed {
-    display: none;
-  }*/
+    .main-navigation__toggle {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -56,10 +58,6 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-
-  &--nojs {
-    display: none;
   }
 
   &:hover::before,
